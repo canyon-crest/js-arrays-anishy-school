@@ -59,9 +59,9 @@ for (let i = 0; i < 5; i++){
 let message = "";
 for (let i = 0; i < numbers.length; i++){
     if (i < numbers.length - 1) {
-        message = message + i + ", ";
+        message = message + numbers[i] + ", ";
     } else {
-        message = message + i;
+        message = message + numbers[i];
     }
 }
 console.log("Numbers: " + message);
@@ -95,7 +95,7 @@ console.log("Even count: " + even);
 //         Loop through the rest and update if you find a bigger one.
 //         Print: console.log("Largest: " + largest)
 let largest = numbers[0];
-for (let i = i; i < numbers.length; i++){
+for (let i = 1; i < numbers.length; i++){
     if (numbers[i] > largest){
         largest = numbers[i];
     }
